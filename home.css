@@ -1,0 +1,83 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+.cabin .content-wrapper,
+.backdrop,
+.cabin,
+.carousel,
+.vjslider {
+  height: 100%;
+  width: 100%;
+}
+
+.slider-buttons {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.cabin {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cabin-classic {
+  background-image: url('/resources/img/cabin-classic.jpg');
+}
+
+.cabin-friends {
+  background-image: url('/resources/img/cabin-friends.jpg');
+}
+.cabin-family {
+  background-image: url('/resources/img/cabin-family.jpg');
+}
+
+.backdrop {
+  padding-top: var(--website-nav-height);
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.good-looking-square,
+.cabin .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cabin .content-wrapper {
+  padding: 0 var(--website-padding);
+  width: auto;
+}
+
+.content-wrapper h2 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 4em;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+}
+
+.content-wrapper p {
+  font-family: var(--font-text);
+  max-width: 700px;
+  text-align: center;
+  line-height: 1.6em;
+  font-size: 1.1em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.content-wrapper a {
+  color: white;
+  text-decoration: none;
+}

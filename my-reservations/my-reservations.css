@@ -1,0 +1,100 @@
+h1 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  text-align: center;
+  font-size: 3em;
+  margin: 1.6em 0;
+}
+
+.responsiveContainer {
+  padding-bottom: 77px !important;
+}
+
+.reservationsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  border: solid 1px #5d606c;
+  background-color: #3e4047;
+}
+
+.reservation .cabin-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 35%;
+  flex-shrink: 0;
+}
+
+.reservation .cabin-image:before {
+  content: "";
+  display: block;
+  padding-top: 66%;
+}
+
+
+.i0 {
+  background-image: url('/resources/img/cabin-classic.jpg');
+}
+
+.i1 {
+  background-image: url('/resources/img/cabin-friends.jpg');
+}
+
+.i2 {
+  background-image: url('/resources/img/cabin-family.jpg');
+}
+
+.reservation .info {
+  padding: 10px 25px;
+  flex-grow: 1;
+}
+
+.reservation h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+}
+
+
+.reservation p {
+  margin-top: 0;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+
+.reservation .status {
+  padding: 7px 10px 10px 10px;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.status.s0 {
+  border: dotted 1px darkorange;
+  color: darkorange;
+}
+
+.status.s1 {
+  border: dotted 1px #1DB954;
+  color: #1DB954;
+}
+
+.status.s2 {
+  border: dotted 1px #ff7675;
+  color: #ff7675;
+}

@@ -1,0 +1,124 @@
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-panel,
+.right-panel {
+  width: 50%;
+  height: 100%;
+}
+
+
+.left-panel {
+  background-image: url('/resources/img/cabin-classic.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(45, 45, 45, 0.2);
+  -webkit-backdrop-filter: saturate(50%) blur(15px);
+  backdrop-filter: saturate(50%) blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-panel {
+  padding: 70px var(--website-padding);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+main {
+  margin: auto;
+  max-width: 400px;
+  width: 100%;
+}
+
+form {
+  width: 100%;
+}
+
+.input-box {
+  --input-height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: var(--input-height);
+  margin-bottom: 24px;
+}
+
+.input-box label {
+  background-color: #3e4047;
+  padding: 10px 16px 10px 25px;
+  border-radius: 30px 0 0 30px;
+  border: solid 1px;
+  border-right: 0;
+  width: 120px;
+  text-align: center;
+}
+
+.input-box select,
+.input-box input {
+  background-color: rgba(62, 64, 71, 0.6);
+  padding: 10px 25px 10px 16px;
+  padding: 8px 25px 9px 16px;
+  border-radius: 0 30px 30px 0;
+  border: solid 1px;
+  color: white;
+  font-family: inherit;
+  flex-grow: 1;
+}
+
+.input-box select,
+.input-box label,
+.input-box input {
+  height: var(--input-height);
+  font-family: var(--font-default);
+  height: 100%;
+  border-color: #5d606c;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+button[type="submit"] {
+  margin-top: 50px;
+  margin: 0 auto;
+}
+
+.divider {
+  display: block;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin: 22px auto 10px auto;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  height: 1px;
+  width: calc(50% - 15px);
+  background-color: #373940;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}

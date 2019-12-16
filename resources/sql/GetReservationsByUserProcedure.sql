@@ -1,0 +1,14 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE GetReservationsByUser
+	@username VARCHAR(50)
+AS
+BEGIN
+	SET NOCOUNT ON;
+	
+    SELECT * FROM Reservations WHERE userId IN (SELECT userId FROM Users WHERE username = @username);
+	
+END
+GO

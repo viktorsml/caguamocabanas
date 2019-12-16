@@ -1,0 +1,214 @@
+body {
+  --website-max-width: 920px;
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  text-align: center;
+  font-size: 3em;
+  margin: 1.6em 0;
+}
+
+.responsiveContainer {
+  padding-bottom: 77px !important;
+}
+
+.divider {
+  display: block;
+  text-align: start;
+  position: relative;
+  width: 100%;
+  margin: 22px auto 10px auto;
+  font-weight: 400;
+  font-family: var(--font-text);
+  font-size: 1em;
+  letter-spacing: 0.02em;
+  line-height: 4em;
+  margin-top: 50px;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #373940;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider span {
+  background-color: rgb(var(--color-background));
+}
+
+.input-box {
+  --input-height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: var(--input-height);
+  margin-bottom: 24px;
+}
+
+.input-box label {
+  background-color: #3e4047;
+  padding: 10px 16px 10px 25px;
+  border-radius: 30px 0 0 30px;
+  border: solid 1px;
+  border-right: 0;
+  width: 120px;
+  text-align: center;
+}
+
+.input-box select,
+.input-box input {
+  background-color: rgba(62, 64, 71, 0.6);
+  padding: 10px 25px 10px 16px;
+  padding: 8px 25px 9px 16px;
+  border-radius: 0 30px 30px 0;
+  border: solid 1px;
+  color: white;
+  font-family: inherit;
+  flex-grow: 1;
+}
+
+.input-box select,
+.input-box label,
+.input-box input {
+  height: var(--input-height);
+  font-family: var(--font-default);
+  height: 100%;
+  border-color: #5d606c;
+}
+
+.flex-row.people {
+  justify-content: center;
+}
+
+.flex-row.people label {
+  width: 170px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-row .input-box {
+  margin: 10px;
+}
+
+.cabin-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 11px;
+  background-color: #3e4047;
+  border-radius: 6px;
+  overflow: hidden;
+  border: solid 1px #5d606c;
+}
+
+.cabin-card .cabin-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+.cabin-card .cabin-image:before {
+  content: "";
+  display: block;
+  padding-top: 66%;
+}
+
+.cabin-card .cabin-info {
+  padding: 0 0 20px 0;
+  margin: 20px 15px 0 15px;
+  border-bottom: solid 1px #5d606c;
+  list-style: none;
+  text-align: center;
+  font-family: var(--font-text);
+}
+
+.cabin-info .capacity {
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+.cabin-info .price {
+  font-size: 1em;
+  margin-top: 16px;
+}
+
+.cabin-card .cabin-radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10px;
+}
+
+.cabin-card label {
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+.image-classic {
+  background-image: url('/resources/img/cabin-classic.jpg');
+}
+
+.image-friends {
+  background-image: url('/resources/img/cabin-friends.jpg');
+}
+
+.image-family {
+  background-image: url('/resources/img/cabin-family.jpg');
+}
+
+#totalCostText {
+  margin: 0;
+  padding: 20px;
+  border: dotted 1px #3e3e3e;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+#stepTwo,
+#stepThree {
+  display: none;
+}
+
+.isVisible {
+  display: block !important;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 80px 0 50px 0;
+}
+
+.imageContainer img {
+  width: 100px;
+}
+
+.alternativeTitleMargin {
+  margin-top: 50px;
+}
+
+.textConfirmation {
+  text-align: center;
+  line-height: 1.7em;
+  font-size: 1.1em;
+}
